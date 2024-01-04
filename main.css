@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    box-shadow: white 2px;
+}
+
+header button {
+    background-color: #198754 !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.tab-pane .row > div {
+    max-height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imgAmenities {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1.1s;
+}
+
+.imgAmenities:hover {
+    transform: scale(1.1);
+}
+
+.modal .modal-content img,
+#book img {
+    height: auto;
+    width: 100%;
+}
+
+#carouselSpa img,
+#carouselGym img,
+#carouselRestaurant img,
+#carouselPool img {
+    height: 80vh;
+}
+
+.imgCard {
+    overflow: hidden;
+}
+
+.imgCard img{
+    object-fit: cover;
+    transition: all 1.1s;
+}
+
+.imgCard img:hover {
+    transform: scale(1.1);
+}
+
+form textarea {
+    resize: none;
+}

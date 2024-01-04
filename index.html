@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mock website project developed for educational purposes, built with Bootstrap.">
+    <meta name="author" content="FabricioMeneze5">
+    <title>Oasis Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-dark">
+    <header id="head" class="sticky-top navbar navbar-expand-lg bg-black bg-gradient bg-opacity-75 p-3">
+            <div class="container">
+                <h1 class="m-0 text-white">Oasis Resort</h1>
+                <button class="navbar-toggler btn btn-primary" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="nav-menu">
+                    <ul class="nav nav-underline d-block d-md-flex text-center">
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link text-success" href="#aboutUs">
+                                <i class="bi bi-buildings-fill me-1"></i>
+                                About us
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link text-success" href="#amenities">
+                                <i class="bi bi-hearts me-1"></i>
+                                Amenities
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link text-success" href="#bedrooms">
+                                <i class="bi bi-house-heart-fill me-1"></i>
+                                Bedrooms
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link text-success" href="#book">
+                                <i class="bi bi-calendar2-week me-1"></i>
+                                Book
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#head" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/carousel/carousel(1).jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/carousel/carousel(2).jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/carousel/carousel(3).jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/carousel/carousel(4).jpg">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/carousel/carousel(5).jpg">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+            </div>
+        </div>
+        <div class="container">
+        <section id="aboutUs">
+            <h2 class="text-success text-center mb-4 mt-4 fs-1">About us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="w-100 rounded" src="./images/front of the hotel.jpg">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-white">History</h3>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, dolorem! Ullam tenetur non saepe. Quos veritatis facere officiis culpa amet iste placeat dolor consequatur eligendi nesciunt! Nostrum voluptates esse commodi.</p>
+                    <h3 class="text-white">Social Midia</h3>
+                    <ul class="social-links m-0 p-0">
+                        <li class="fs-4">
+                            <a href="#">
+                                <i class="bi bi-facebook text-primary"></i>
+                            </a>
+                        </li>
+                        <li class="fs-4 ms-1 me-1">
+                            <a  href="#">
+                                <i class="bi bi-instagram text-danger ms-1 me-1"></i>
+                            </a>
+                        </li>
+                        <li class="fs-4">
+                            <a href="#">
+                                <i class="bi bi-whatsapp text-success"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="amenities">
+            <h2 class="text-success text-center mt-4 mb-4 fs-1">Amenities</h2>
+            <nav class="nav nav-underline">
+                <button data-bs-toggle="tab" data-bs-target="#spa" type="button" class="nav-link text-success">Spa</button>
+                <button data-bs-toggle="tab" data-bs-target="#gym" type="button" class="nav-link text-success">Gym</button>
+                <button data-bs-toggle="tab" data-bs-target="#restaurant" type="button" class="nav-link text-success">Restaurant</button>
+                <button data-bs-toggle="tab" data-bs-target="#pool" type="button" class="nav-link text-success">Pool</button>
+            </nav>
+            <div class="m-1 tab-content">
+                <div id="spa" class="tab-pane active">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/spa(1).jpg" data-bs-toggle="modal" data-bs-target="#spaModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/spa(2).jpg" data-bs-toggle="modal" data-bs-target="#spaModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/spa(3).jpg" data-bs-toggle="modal" data-bs-target="#spaModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/spa(4).jpg" data-bs-toggle="modal" data-bs-target="#spaModal">
+                        </div>
+                    </div>
+                    <div class="modal modal-lg" id="spaModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Spa</h5>
+                                    <button data-bs-dismiss="modal" type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="carousel slide" data-bs-ride="carousel" id="carouselSpa">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="3000">
+                                                <img src="./images/amenities/spa(1).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/spa(2).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/spa(3).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/spa(4).jpg">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSpa" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselSpa" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gym" class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/gym(1).jpg" data-bs-toggle="modal" data-bs-target="#gymModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/gym(2).jpg" data-bs-toggle="modal" data-bs-target="#gymModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/gym(3).jpg" data-bs-toggle="modal" data-bs-target="#gymModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/gym(4).jpg" data-bs-toggle="modal" data-bs-target="#gymModal">
+                        </div>
+                    </div>
+                    <div class="modal modal-lg" id="gymModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Gym</h5>
+                                    <button data-bs-dismiss="modal" type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="carousel slide" data-bs-ride="carousel" id="carouselGym">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="3000">
+                                                <img src="./images/amenities/gym(1).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/gym(2).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/gym(3).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/gym(4).jpg">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGym" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGym" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="restaurant" class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/restaurant(1).jpg" data-bs-toggle="modal" data-bs-target="#restaurantModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/restaurant(2).jpg" data-bs-toggle="modal" data-bs-target="#restaurantModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/restaurant(3).jpg" data-bs-toggle="modal" data-bs-target="#restaurantModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/restaurant(4).jpg" data-bs-toggle="modal" data-bs-target="#restaurantModal">
+                        </div>
+                    </div>
+                    <div class="modal modal-lg" id="restaurantModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Restaurant</h5>
+                                    <button data-bs-dismiss="modal" type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="carousel slide" data-bs-ride="carousel" id="carouselRestaurant">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="3000">
+                                                <img src="./images/amenities/restaurant(1).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/restaurant(2).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/restaurant(3).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/restaurant(4).jpg">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurant" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurant" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pool" class="tab-pane">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/pool(1).jpg" data-bs-toggle="modal" data-bs-target="#poolModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/pool(2).jpg" data-bs-toggle="modal" data-bs-target="#poolModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/pool(3).jpg" data-bs-toggle="modal" data-bs-target="#poolModal">
+                        </div>
+                        <div class="col-md-4 col-lg-3 mb-3">
+                            <img class="imgAmenities" src="./images/amenities/pool(4).jpg" data-bs-toggle="modal" data-bs-target="#poolModal">
+                        </div>
+                    </div>
+                    <div class="modal modal-lg" id="poolModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Pool</h5>
+                                    <button data-bs-dismiss="modal" type="button" class="btn-close" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="carousel slide" data-bs-ride="carousel" id="carouselPool">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active" data-bs-interval="3000">
+                                                <img src="./images/amenities/pool(1).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/pool(2).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/pool(3).jpg">
+                                            </div>
+                                            <div class="carousel-item" data-bs-interval="3000">
+                                                <img src="./images/amenities/pool(4).jpg">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPool" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPool" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bedrooms">
+            <h2 class="text-success text-center mt-4 mb-4 fs-1">Bedrooms</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(1).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 1</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(2).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 2</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(3).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 3</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(4).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 4</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(5).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 5</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(6).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 6</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(7).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 7</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card imgCard">
+                        <img class="card-img-top" src="./images/bedrooms/bedroom(8).jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Room 8</h5>
+                            <div class="text-primary">
+                                <i class="bi bi-award-fill"></i>
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                            </div>
+                            <span class="fw-bold">000,00 €</span>
+                            <p class="text-card">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <button type="button" class="btn btn-success w-100">Reserve</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="book" class="mb-5">
+            <h2 class="text-success text-center mt-4 mb-4 fs-1">Book</h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-6  mb-3">
+                    <form class="bg-white p-3 rounded">
+                        <input type="text" id="nameId" class="form-control" placeholder="Name:" name="name">
+                        <input type="email" id="emailId" class="form-control mt-3" placeholder="E-mail" name="email">
+                        <input type="tel" id="phoneId" class="form-control mt-3" placeholder="Phone:" name="phone">
+                        <input type="text" id="roomId" class="form-control mt-3" placeholder="Room:" name="room">
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <label for="adultsNumberId" class="form-label">Adults</label>
+                                <input type="number" id="adultsNumberId" class="form-control" name="adults">
+                                <label for="checkInId" class="form-label mt-3">Check-in</label>
+                                <input type="date" id="checkInId" class="form-control" name="checkin">
+                            </div>
+                            <div class="col-6">
+                                <label for="childrenNumberId" class="form-label">Children</label>
+                                <input type="number" id="childrenNumberId" class="form-control">
+                                <label for="checkOutId" class="form-label mt-3">Check-out</label>
+                                <input type="date" id="checkOutId" class="form-control" name="checkout">
+                            </div>
+                        </div>
+                        <textarea class="form-control mt-3" placeholder="Would you like something else? Let us know:"></textarea>
+                        <div class="form-check form-switch mb-3">
+                            <label class="form-check-label">I have read and agree to the <a href="#">terms</a>.</label>
+                            <input class="form-check-input" type="checkbox" id="idTerms">
+                        </div>
+                        <button id="paymentButtun" type="submit" class="btn btn-success">payment</button>
+                    </form>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <img class="rounded" src="./images/book/map.jpg">
+                    <address class="text-white">
+                        <h3 class="h5 mt-3">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Address
+                        </h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <h3 class="h5 mt-3">
+                            <i class="bi bi-telephone-fill"></i>
+                            Contact
+                        </h3>
+                        000 000 000
+                        <h3 class="h5 mt-3">
+                            <i class="bi bi-envelope-fill"></i>
+                            E-mail
+                        </h3>
+                        LoremIpsumDolor@Lorem.com
+                    </address>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-black bg-gradient bg-opacity-75 p-3 text-white">
+        <div class="container">
+            Fabricio Menezes 2023 &copy; Oasis Hotel
+        </div>
+    </footer>
+
+    
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
